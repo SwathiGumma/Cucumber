@@ -36,6 +36,10 @@ public class AddCuCum {
 	public void the_user_should_see_the_customer_id_generated() {
 		Assert.assertTrue(driver.findElement(By.tagName("h3")).isDisplayed());
 	}
+	@Then("The user should see the customer id generated")
+	public void the_user_should_see_the_customer_id_generated_1() {
+		Assert.assertTrue(driver.findElement(By.tagName("h3")).isVisible());
+	}
 
 
 }
